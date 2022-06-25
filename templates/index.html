@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Heart Disease prediction</title>
+  </head>
+  <body>
+    
+    <h1  class="bo">Heart Disease Prediction</h1>    
+    <div class="Image">
+      <img src="https://media.istockphoto.com/vectors/anatomical-heart-isolated-heart-diagnostic-center-sign-human-heart-vector-id1177145926?k=20&m=1177145926&s=612x612&w=0&h=30PszSkc9jmobfif-KVcCaauGUDAWlGspthpmtMsI54=">
+    </div>
+  <div class="form-data">
+    <div class="wrapper">
+      <div class="head">
+      <form action="{{url_for('predict')}}" method="post">
+       
+       <div class="prediction">{{ prediction_text }}</div>
+        <div class="btn-box"><a class="btn btn-link" href="{{url_for('index2')}}" target="_blank">Know More</a></div>
+        <hr class="sep"/>
+      </div>
+        <div class="df">
+        <div class="group">
+          <input type="text" required="required" name="age" id="age"/><span class="highlight"></span><span class="bar"></span>
+          <label>age</label>
+        </div>
+        <div class="group">
+          <input type="text" required name="cpt" id="cpt"/><span class="highlight"></span><span class="bar"></span>
+          <label>cpt</label>
+        </div>
+      </div>
+      <div class="df">
+        <div class="group">
+          <input type="text" required name="rbp" id="rbp"/><span class="highlight"></span><span class="bar"></span>
+          <label>rbp</label>
+        </div>
+        <div class="group">
+          <input type="text" required="required" name="chl" id="chl"/><span class="highlight"></span><span class="bar"></span>
+          <label>chl</label>
+        </div>
+      </div>
+      <div class="df">
+        <div class="group">
+          <input type="text" required name="mhr" id="mhr"/><span class="highlight"></span><span class="bar"></span>
+          <label>mhr</label>
+        </div>
+        <div class="group">
+          <input type="text" required name="eia" id="eia"/><span class="highlight"></span><span class="bar"></span>
+          <label>eia</label>
+        </div>
+      </div>
+      <div class="df">
+        <div class="group">
+          <input type="text" required="required" name="opk" id="opk"/><span class="highlight"></span><span class="bar"></span>
+          <label>opk</label>
+        </div>
+        <div class="group">
+          <input type="text" required="required" name="slp" id="slp"/><span class="highlight"></span><span class="bar"></span>
+          <label>slp</label>
+        </div>
+      </div>
+      <div class="df">
+        <div class="group">
+          <input type="text" required="required" name="ca" id="ca"/><span class="highlight"></span><span class="bar"></span>
+          <label>ca</label>
+        </div>
+        <div class="group">
+          <input type="text" required="required" name="tha" id="tha"/><span class="highlight"></span><span class="bar"></span>
+          <label>tha</label>
+        </div>
+      </div>
+          <!--<button class="btn btn-submit" type="submit">submit</button>
+          <button class="btn btn-cancel" type="button">cancel</button>-->
+          <input class="submit" type="submit" value="Submit" />
+          
+      </form>
+      <div class="side">
+        
+      <video src="https://media.giphy.com/media/3ornk8qaF9ytl9zmY8/giphy.mp4"></video>
+      </div>
+    </div>
+
+
+  </div>
+  </body>
+</html>

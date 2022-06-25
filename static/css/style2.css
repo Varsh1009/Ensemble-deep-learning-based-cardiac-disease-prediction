@@ -1,0 +1,23 @@
+.tit{
+    background-color:brown;
+    color:white;
+}
+.row .img2
+{
+    width:500px;
+    height:400px;
+}
+.row{
+    padding-top:10px;
+}
+.final{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float:center;
+}
+.final img{
+margin-left:28%
+}
+.final h3{
+    margin-left:40%;
+    text-align:center;
+}
